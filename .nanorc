@@ -1,6 +1,18 @@
-bind ^M mark main
-bind ^C copy main
-bind ^V paste main
-bind ^S save main
-bind M-, prevpage main
-bind M-. nextpage main
+set tabsize 4
+set linenumbers
+set softwrap
+
+# Useful Keybinds
+bind ^b mark main 			# CTRL + b | Mark
+bind ^c copy main			# CTRL + c | Copy
+bind ^v paste main          # CTRL + v | Paste
+bind ^s savefile main       # CTRL + s | Savefile (W/o Prompt)
+bind ^r replace main        # CTRL + r | Replace
+bind ^z undo main           # CTRL + z | Undo
+bind ^y redo main           # CTRL + y | Redo
+bind ^p cut main            # CTRL + p | Cut
+bind ^f whereis main        # CTRL + f | Search
+
+# Word Jumping
+bind ^o nextword main       # CTRL + o | Goto Next Word
+bind ^p prevword main       # CTRL + p | Goto Previous Word
