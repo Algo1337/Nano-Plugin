@@ -1,6 +1,6 @@
 set tabsize 4
-set linenumbers
 set softwrap
+set nohelp
 
 set titlecolor white,blue
 set selectedcolor white,blue
@@ -14,13 +14,14 @@ bind ^s savefile main       # CTRL + s | Savefile (W/o Prompt)
 bind ^r replace main        # CTRL + r | Replace
 bind ^z undo main           # CTRL + z | Undo
 bind ^y redo main           # CTRL + y | Redo
-bind ^p cut main            # CTRL + p | Cut
+bind ^t cut main            # CTRL + p | Cut
 bind ^f whereis main        # CTRL + f | Search
+
+# Comment Out Line
+bind ^/ comment main
 
 # Word Jumping
 bind ^p nextword main       # CTRL + o | Goto Next Word
 bind ^o prevword main       # CTRL + p | Goto Previous Word
-bind ^j nextpage main 		# CTRL + j | Goto Next Page
-bind ^u prevpage main		# CTRL + u | Goto Previous Page
-bind ^q prevquote main
-bind ^a nextquote main
+bind M-p nextpage main 		# CTRL + j | Goto Next Page
+bind M-o prevpage main		# CTRL + u | Goto Previous Page
