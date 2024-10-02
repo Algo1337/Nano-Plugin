@@ -1,0 +1,6 @@
+bind ^M mark main
+bind ^C copy main
+bind ^V paste main
+bind ^S save main
+bind M-, prevpage main
+bind M-. nextpage main
