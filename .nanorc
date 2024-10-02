@@ -2,6 +2,10 @@ set tabsize 4
 set linenumbers
 set softwrap
 
+set titlecolor white,blue
+set selectedcolor white,blue
+set numbercolor white,blue
+
 # Useful Keybinds
 bind ^b mark main 			# CTRL + b | Mark
 bind ^c copy main			# CTRL + c | Copy
@@ -14,5 +18,9 @@ bind ^p cut main            # CTRL + p | Cut
 bind ^f whereis main        # CTRL + f | Search
 
 # Word Jumping
-bind ^o nextword main       # CTRL + o | Goto Next Word
-bind ^p prevword main       # CTRL + p | Goto Previous Word
+bind ^p nextword main       # CTRL + o | Goto Next Word
+bind ^o prevword main       # CTRL + p | Goto Previous Word
+bind ^j nextpage main 		# CTRL + j | Goto Next Page
+bind ^u prevpage main		# CTRL + u | Goto Previous Page
+bind ^q prevquote main
+bind ^a nextquote main
