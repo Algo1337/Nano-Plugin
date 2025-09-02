@@ -25,3 +25,10 @@ bind ^p nextword main       # CTRL + o | Goto Next Word
 bind ^o prevword main       # CTRL + p | Goto Previous Word
 bind M-p nextpage main 		# CTRL + j | Goto Next Page
 bind M-o prevpage main		# CTRL + u | Goto Previous Page
+
+syntax "asm" "\.asm$" "\.s$"
+color brightblue "\<(mov|add|sub|mul|div|xor|and|or|not|jmp|je|jne|call|ret|push|pop|lea|cmp|inc|dec)\>"
+color brightgreen "\<([rre]?[abcd]x|[rre]?[sd]i|[rre]?[sb]p|r[0-9]+)\>"
+color brightmagenta ";.*$"
+color brightcyan "0x[0-9A-Fa-f]+"
+color brightyellow "\b[0-9]+\b"
