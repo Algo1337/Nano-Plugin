@@ -57,7 +57,7 @@ syntax "C" "\.(c(c|pp|xx)?|C)$" "\.(h(h|pp|xx)?|H)$" "\.ii?$" "\.(def)$" "\.ino"
 magic "^(C|C\+\+) (source|program)"                                                                                                                 comment "//"
 
 # Custom Types
-color red "\<(none|any|fn_t|handler_t|str|arr|sock_t|len_t|pos_t|fd_t|size_t|heap_t|i8|i16|i32|u8|u16|u32)\>"
+color red "\<(i8|i16|i32|i64|u8|u16|u32|u64|iArr|sArr|none|any|fn_t|handler_t|str|arr|sock_t|len_t|pos_t|fd_t|size_t|heap_t|i8|i16|i32|u8|u16|u32)\>"
 
 color brightyellow "\<[a-zA-Z_][a-zA-Z0-9_]*[[:space:]]*\("
 color green "\<[A-Z_][0-9A-Z_]+\>"
@@ -86,7 +86,7 @@ color cyan "<[^= 	]*>" ""(\\.|[^"])*""
 color yellow "%(\#|(0-+))?(hh|h|l|ll|q|L|j|z|Z|t)?[A-Za-z]" "%%"
 
 color magenta "//.*"
-color magenta start="/\*" end="\*/"
+color magenta start="/\*" skip="[\"']" end="\*/"
 
 color magenta "@param [a-zA-Z_][a-z0-9A-Z_]+"
 color magenta "@return"
