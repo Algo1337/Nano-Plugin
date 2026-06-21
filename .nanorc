@@ -86,7 +86,7 @@ color cyan "<[^= 	]*>" ""(\\.|[^"])*""
 color yellow "%(\#|(0-+))?(hh|h|l|ll|q|L|j|z|Z|t)?[A-Za-z]" "%%"
 
 color magenta "//.*"
-color magenta start="/\*" skip="[\"']" end="\*/"
+color magenta "\"[^\"]*\"|'[^']*'"
 
 color magenta "@param [a-zA-Z_][a-z0-9A-Z_]+"
 color magenta "@return"
